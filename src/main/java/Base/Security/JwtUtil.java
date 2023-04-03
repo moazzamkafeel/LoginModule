@@ -16,6 +16,10 @@ public class JwtUtil {
 
     private String SECRET_KEY = "Moazzamkafeel";
 
+    public String getUserNameFromToken(String token)
+    {
+    	return getUserNameFromToken(token);
+    }
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
     }
